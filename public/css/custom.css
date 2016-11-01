@@ -1,0 +1,154 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 50px;
+	background: #f1f1f1 url('../img/body-bg.png')
+}
+
+/*HEADER*/
+header {
+	background: #3e4249 url('../img/header-bg.png');
+	color: #ccc;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #080808;
+}
+h1.header-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+.pull-right .btn {
+	margin: 20px 0 10px;
+}
+.btn-success {
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btn-info {
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btn-info:hover {
+	color: #5bc0de;
+	background: #fff;
+    border-color: #46b8da;
+}
+.btn-success:hover {
+	color: #5cb85c;
+	background: #fff;
+    border-color: #5cb85c;
+}
+.btn-active {
+	background: orange;
+	border-color: orange;
+	color: #fff;
+	transition: all 0.5s ease;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btn-active:hover {
+	color: orange;
+	background: #fff;
+    border-color: orange;
+}
+
+/*NAVBAR-BRAND*/
+.navbar .navbar-brand {
+	font-size: 20px;
+	color: #eee;
+	letter-spacing: 1px;
+}
+.navbar .navbar-brand strong {
+	padding-right: 2px;
+}
+.dropdown-menu  {
+	background: gray;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+.dropdown-menu a {
+	color: #fff !important;
+	text-transform: uppercase;
+	font-weight: bold !important;
+}
+.dropdown-menu a:hover {
+	color: gray !important;
+}
+.dropdown-menu:hover  {
+	background: #fff;
+}
+
+/*LIST-GROUP*/
+.list-group-item-heading {
+	font-size: 150%;
+}
+.list-group-text {
+	color: #999;
+}
+.list-group-item:hover {
+	background: #eee;
+	cursor: pointer;
+}
+.list-group-item:hover .buttons, table.table tr:hover .row-buttons {
+	display: block;
+}
+.badge {
+	margin-left: 10px;
+}
+.buttons {
+	position: absolute;
+	height: 20px;
+	width: 80px;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	display: none;
+}
+.panel-footer small {
+	color: #999;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*MODAL*/
+.modal-content {
+	background: #f1f1f1 url('../img/body-bg.png');
+}
+input.task-input {
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	height: 46px;
+	line-height: 1.33333;
+	color: #555;
+	display: block;
+	font-style: italic;
+}
+input.task-input:focus, input.task-input:active {
+	outline: 0;
+}
+.done {
+	text-decoration: line-through;
+	color: #ddd;
+}
+table.table tbody tr td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.task-item {
+	position: relative;
+}
+.row-buttons {
+	position: absolute;
+	height: 20px;
+	width: 40px;
+	top: 15px;
+	right: 10px;
+	text-align: center;
+	display: none;
+}
+.hidden {
+	display: none;
+}
