@@ -11,4 +11,8 @@ class Task extends Model
     public function todoList() {
         return $this->belongsTo(Task::class);
     }
+
+    public function getCompletedAttribute() {
+        return !is_null($this->completed_at);
+    }
 }
