@@ -15,7 +15,11 @@
                                                 <input type="checkbox" name="check_all" id="check-all" />
                                             </td>
                                             <td>
-                                                <input type="text" class="task-input" placeholder="Enter New Task" />
+                                                <form id="task-form">
+                                                    {{ csrf_field() }}
+                                                    <input type="hidden" id="selected-todo-list">
+                                                    <input type="text" name="title" id="task-title" class="task-input" placeholder="Enter New Task" />
+                                                </form>
                                             </td>
                                         </thread>
                                         <tbody id="task-table-body"></tbody>
