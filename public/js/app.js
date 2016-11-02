@@ -264,3 +264,25 @@ $(".filter-btn").click(function(e) {
         $('tr.task-item:not(:has(td.done))').hide();
     }
 });
+
+$('#task-table-body').on('click', '.remove-task-btn', function(e) {
+    e.preventDefault();
+
+    var url = $(this).attr('href');
+
+    $.ajax({
+       url: url,
+       type: 'DELETE',
+       data: {
+           _token: $('input[name=_token]').val()
+       },
+       success: function(response) {
+           $('#task-' + response.id).fadeOut(function() {
+               $(this).remove();
+               countActiveTasks();
+               countAllTasksOfSelectedList();
+           });
+
+       }
+    });
+});

@@ -5,9 +5,10 @@
     <td class="task-item-title {{ !$task->completed ?: 'done' }}">
         {{ $task->title }}
         <div class="row-buttons">
-            <a href="#" class="btn btn-xs btn-danger">
+            <a href="{{ route('todolists.tasks.destroy', [$task->todoList->id, $task->id]) }}" class="btn btn-xs btn-danger remove-task-btn">
                 <i class="glyphicon glyphicon-remove"></i>
             </a>
         </div>
     </td>
 </tr>
+
